@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is for you btw</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  <style>
+  .hover-effect {
+    position: relative;
+    cursor: help;
+    transition: color 0.3s;
+  }
+
+  .hover-effect::after {
+    content: attr(data-translation);
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-130%);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .hover-effect:hover::after {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <h1>"this is for you btw"</h1>
+        <p>Haz clic para escuchar la canción</p>
+    </header>
+    <main>
+        <div class="content">
+            <audio controls>
+                <source src="https://drive.google.com/file/d/1-A2Lh5d-5LifdSbRATTspUQf6s2_li20/view?usp=drive_link" type="audio/mp3">
+                Ay, parece que tu navegador no puede reproducir el audio :(
+            </audio>
+        </div>
+        <div class="lyrics">
+            <h2>Lyrics</h2>
+            <p>You draw worlds I wanna get lost in,
+lines and words like spells, they pull me in.
+Quiet nights, but your voice stays loud—
+pixel heartbeats through the static sound.
+
+君の世界に触れるたび、(Kimi no sekai ni fureru tabi,)
+あたしは少し他の誰かになる。(atashi wa sukoshi hoka no dareka ni naru.)
+自分が消える夜も、(Jibun ga kieru yoru mo,)
+you kept me from falling apart.
+
+You're in my playlist, lowkey stuck,
+fade in smooth like a midnight cut.
+I don’t name it, but you know what’s up—
+you're the glitch I never debug.
+
+君の声が、頭の中、(Kimi no koe ga, atama no naka,)
+決して沈まないメロディだ。(kesshite shizumanai melody da.)
+I say nothing, but it's all there,
+your shadow’s dancing everywhere.
+
+Stayed up past 3, screen on dim,
+just to hear you laugh again.
+Didn’t say why, but you caught the tone—
+when the silence hit, you didn't go.
+
+Your storyboards inked in my mind,
+even your sketches feel like a sign.
+Never said the word, but if you knew—
+every blank page brings me back to you.
+
+知らないふりはもういらない、(Shiranai furi wa mou iranai,)
+君の視線で時間は止まった。(kimi no shisen de jikan wa tomatta.)
+触れられない言葉の中で、(Furerarenai kotoba no naka de,)
+we’ve written something they won’t find.
+
+You're in my playlist, lowkey flame,
+looping verses I don’t name.
+Not a love song—just a spark,
+but you’ve been glowing in the dark.
+
+君の音に、あたしは揺れる、(Kimi no oto ni, atashi wa yureru,)
+結局、ここに戻ってる。(kekkyoku, koko ni modotteru.)
+I say nothing, but it's all there,
+your echo’s everywhere.</p>
+         <div class="lyrics">
+            <p><span class="hover-effect" data-translation="Vos creás mundos en los que quiero perderme.">You draw worlds I wanna get lost in,</span></p>
+            <p><span class="hover-effect" data-translation="Líneas y palabras como hechizos, me atrapan.">lines and words like spells, they pull me in.</span></p>
+            <p><span class="hover-effect" data-translation="Noches calladas, pero tu voz suena fuerte.">Quiet nights, but your voice stays loud—</span></p>
+            <p><span class="hover-effect" data-translation="Latidos pixelados entre ruidos estáticos.">pixel heartbeats through the static sound.</span></p>
+
+            <p><span class="hover-effect" data-translation="Cada vez que toco tu mundo, me convierto un poco en alguien distinto.">Kimi no sekai ni fureru tabi, atashi wa sukoshi hoka no dareka ni naru.</span></p>
+            <p><span class="hover-effect" data-translation="Incluso en las noches en que me perdía, vos evitaste que me rompiera.">Jibun ga kieru yoru mo, you kept me from falling apart.</span></p>
+
+            <p><span class="hover-effect" data-translation="Estás en mi playlist, como pegado en silencio.">You're in my playlist, lowkey stuck,</span></p>
+            <p><span class="hover-effect" data-translation="Aparecés suave, como un corte de medianoche.">fade in smooth like a midnight cut.</span></p>
+            <p><span class="hover-effect" data-translation="No lo nombro, pero sabés lo que es.">I don’t name it, but you know what’s up—</span></p>
+            <p><span class="hover-effect" data-translation="Sos el error que nunca quise arreglar.">you're the glitch I never debug.</span></p>
+
+            <p><span class="hover-effect" data-translation="Tu voz, en mi cabeza, es una melodía que nunca se apaga.">Kimi no koe ga, atama no naka, kesshite shizumanai melody da.</span></p>
+            <p><span class="hover-effect" data-translation="No digo nada, pero está todo ahí.">I say nothing, but it's all there,</span></p>
+            <p><span class="hover-effect" data-translation="Tu sombra baila por todas partes.">your shadow’s dancing everywhere.</span></p>
+
+            <p><span class="hover-effect" data-translation="Me quedé despierta hasta después de las 3, con la pantalla tenue.">Stayed up past 3, screen on dim,</span></p>
+            <p><span class="hover-effect" data-translation="Solo para volver a escuchar tu risa.">just to hear you laugh again.</span></p>
+            <p><span class="hover-effect" data-translation="No dije por qué, pero entendiste el tono.">Didn’t say why, but you caught the tone—</span></p>
+            <p><span class="hover-effect" data-translation="Cuando llegó el silencio, no te fuiste.">when the silence hit, you didn't go.</span></p>
+
+            <p><span class="hover-effect" data-translation="Tus storyboards quedaron grabados en mi mente.">Your storyboards inked in my mind,</span></p>
+            <p><span class="hover-effect" data-translation="Incluso tus bocetos parecen señales.">even your sketches feel like a sign.</span></p>
+            <p><span class="hover-effect" data-translation="Nunca dije la palabra, pero si supieras—">Never said the word, but if you knew—</span></p>
+            <p><span class="hover-effect" data-translation="Cada página en blanco me lleva de vuelta a vos.">every blank page brings me back to you.</span></p>
+
+            <p><span class="hover-effect" data-translation="Ya no necesito fingir que no sé.">Shiranai furi wa mou iranai,</span></p>
+            <p><span class="hover-effect" data-translation="El tiempo se detuvo con tu mirada.">kimi no shisen de jikan wa tomatta.</span></p>
+            <p><span class="hover-effect" data-translation="En las palabras que no se pueden tocar,">Furerarenai kotoba no naka de,</span></p>
+            <p><span class="hover-effect" data-translation="Escribimos algo que nadie más va a encontrar.">we’ve written something they won’t find.</span></p>
+
+            <p><span class="hover-effect" data-translation="Estás en mi playlist, como una llamita escondida.">You're in my playlist, lowkey flame,</span></p>
+            <p><span class="hover-effect" data-translation="Versos en bucle que nunca nombro.">looping verses I don’t name.</span></p>
+            <p><span class="hover-effect" data-translation="No es una canción de amor—solo una chispa.">Not a love song—just a spark,</span></p>
+            <p><span class="hover-effect" data-translation="Pero estuviste brillando en la oscuridad.">but you’ve been glowing in the dark.</span></p>
+
+            <p><span class="hover-effect" data-translation="Con tu sonido, yo me balanceo.">Kimi no oto ni, atashi wa yureru,</span></p>
+            <p><span class="hover-effect" data-translation="Al final, siempre vuelvo acá.">kekkyoku, koko ni modotteru.</span></p>
+            <p><span class="hover-effect" data-translation="No digo nada, pero está todo ahí.">I say nothing, but it's all there,</span></p>
+            <p><span class="hover-effect" data-translation="Tu eco está en todas partes.">your echo’s everywhere.</span></p>
+          </div>
+    </main>
+    <footer>
+        <p>De Sol, para ti. 💌 </p>
+    </footer>
+</body>
+</html>
